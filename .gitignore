@@ -1,1 +1,7 @@
 .DS_Store
+config.h
+config.log
+config.status
+configure
+*.o
+build/libnrevent.a

@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		97B466E31C9AEC4400DD2C30 /* EventBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97B466DF1C9AEC4400DD2C30 /* EventBase.cpp */; };
-		97B466E41C9AEC4400DD2C30 /* EventBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 97B466E01C9AEC4400DD2C30 /* EventBase.h */; };
-		97B466E51C9AEC4400DD2C30 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97B466E11C9AEC4400DD2C30 /* Timer.cpp */; };
-		97B466E61C9AEC4400DD2C30 /* Timer.h in Headers */ = {isa = PBXBuildFile; fileRef = 97B466E21C9AEC4400DD2C30 /* Timer.h */; };
+		979DE8941D329B8700F9FA41 /* EventBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 979DE8901D329B8700F9FA41 /* EventBase.cpp */; };
+		979DE8951D329B8700F9FA41 /* EventBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 979DE8911D329B8700F9FA41 /* EventBase.h */; };
+		979DE8961D329B8700F9FA41 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 979DE8921D329B8700F9FA41 /* Timer.cpp */; };
+		979DE8971D329B8700F9FA41 /* Timer.h in Headers */ = {isa = PBXBuildFile; fileRef = 979DE8931D329B8700F9FA41 /* Timer.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		979DE8901D329B8700F9FA41 /* EventBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EventBase.cpp; path = libnrevent/EventBase.cpp; sourceTree = "<group>"; };
+		979DE8911D329B8700F9FA41 /* EventBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventBase.h; path = libnrevent/EventBase.h; sourceTree = "<group>"; };
+		979DE8921D329B8700F9FA41 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Timer.cpp; path = libnrevent/Timer.cpp; sourceTree = "<group>"; };
+		979DE8931D329B8700F9FA41 /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Timer.h; path = libnrevent/Timer.h; sourceTree = "<group>"; };
 		97B466D71C9AEBCF00DD2C30 /* libNrEvent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNrEvent.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		97B466DF1C9AEC4400DD2C30 /* EventBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EventBase.cpp; path = nrevent/EventBase.cpp; sourceTree = "<group>"; };
-		97B466E01C9AEC4400DD2C30 /* EventBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventBase.h; path = nrevent/EventBase.h; sourceTree = "<group>"; };
-		97B466E11C9AEC4400DD2C30 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Timer.cpp; path = nrevent/Timer.cpp; sourceTree = "<group>"; };
-		97B466E21C9AEC4400DD2C30 /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Timer.h; path = nrevent/Timer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +35,7 @@
 		97B466CE1C9AEBCF00DD2C30 = {
 			isa = PBXGroup;
 			children = (
-				97B466E71C9AEC4700DD2C30 /* nrevent */,
+				97B466E71C9AEC4700DD2C30 /* src */,
 				97B466D81C9AEBCF00DD2C30 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,15 +48,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		97B466E71C9AEC4700DD2C30 /* nrevent */ = {
+		97B466E71C9AEC4700DD2C30 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				97B466DF1C9AEC4400DD2C30 /* EventBase.cpp */,
-				97B466E01C9AEC4400DD2C30 /* EventBase.h */,
-				97B466E11C9AEC4400DD2C30 /* Timer.cpp */,
-				97B466E21C9AEC4400DD2C30 /* Timer.h */,
+				979DE8901D329B8700F9FA41 /* EventBase.cpp */,
+				979DE8911D329B8700F9FA41 /* EventBase.h */,
+				979DE8921D329B8700F9FA41 /* Timer.cpp */,
+				979DE8931D329B8700F9FA41 /* Timer.h */,
 			);
-			name = nrevent;
+			name = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -66,8 +66,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97B466E61C9AEC4400DD2C30 /* Timer.h in Headers */,
-				97B466E41C9AEC4400DD2C30 /* EventBase.h in Headers */,
+				979DE8971D329B8700F9FA41 /* Timer.h in Headers */,
+				979DE8951D329B8700F9FA41 /* EventBase.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,8 +127,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97B466E31C9AEC4400DD2C30 /* EventBase.cpp in Sources */,
-				97B466E51C9AEC4400DD2C30 /* Timer.cpp in Sources */,
+				979DE8941D329B8700F9FA41 /* EventBase.cpp in Sources */,
+				979DE8961D329B8700F9FA41 /* Timer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +220,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/opt/libevent/include,
+					"\"$(SRCROOT)/../libNRCore\"",
+					"\"$(SRCROOT)/../libNrThreads\"",
+					"\"$(SRCROOT)/../libNrDebug\"",
+					"\"$(SRCROOT)/../libNrIO\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -228,6 +235,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/opt/libevent/include,
+					"\"$(SRCROOT)/../libNRCore\"",
+					"\"$(SRCROOT)/../libNrThreads\"",
+					"\"$(SRCROOT)/../libNrDebug\"",
+					"\"$(SRCROOT)/../libNrIO\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

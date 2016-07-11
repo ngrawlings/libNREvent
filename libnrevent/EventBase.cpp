@@ -10,8 +10,7 @@
 
 #include <libnrcore/types.h>
 #include <signal.h>
-#include <libnrcore/debug/Log.h>
-#include <libnrcore/socket/Socket.h>
+#include <libnrdebug/Log.h>
 
 namespace nrcore {
     

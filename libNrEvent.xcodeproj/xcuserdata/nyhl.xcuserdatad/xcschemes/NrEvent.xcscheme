@@ -18,7 +18,7 @@
                BlueprintIdentifier = "97B466D61C9AEBCF00DD2C30"
                BuildableName = "libNrEvent.a"
                BlueprintName = "NrEvent"
-               ReferencedContainer = "container:NrEvent.xcodeproj">
+               ReferencedContainer = "container:libNrEvent.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -30,6 +30,15 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "97B466D61C9AEBCF00DD2C30"
+            BuildableName = "libNrEvent.a"
+            BlueprintName = "NrEvent"
+            ReferencedContainer = "container:NrEvent.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -43,15 +52,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "97B466D61C9AEBCF00DD2C30"
-            BuildableName = "libNrEvent.a"
-            BlueprintName = "NrEvent"
-            ReferencedContainer = "container:NrEvent.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -61,15 +61,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "97B466D61C9AEBCF00DD2C30"
-            BuildableName = "libNrEvent.a"
-            BlueprintName = "NrEvent"
-            ReferencedContainer = "container:NrEvent.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

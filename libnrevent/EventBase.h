@@ -15,8 +15,8 @@
 #include <event2/event_compat.h>
 #include <event2/thread.h>
 
-#include <libnrcore/threading/Task.h>
-#include <libnrcore/threading/Thread.h>
+#include <libnrthreads/Task.h>
+#include <libnrthreads/Thread.h>
 
 namespace nrcore {
     

@@ -18,7 +18,7 @@
 		979DE8911D329B8700F9FA41 /* EventBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventBase.h; path = libnrevent/EventBase.h; sourceTree = "<group>"; };
 		979DE8921D329B8700F9FA41 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Timer.cpp; path = libnrevent/Timer.cpp; sourceTree = "<group>"; };
 		979DE8931D329B8700F9FA41 /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Timer.h; path = libnrevent/Timer.h; sourceTree = "<group>"; };
-		97B466D71C9AEBCF00DD2C30 /* libNrEvent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNrEvent.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		97B466D71C9AEBCF00DD2C30 /* libnrevent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libnrevent.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +43,7 @@
 		97B466D81C9AEBCF00DD2C30 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				97B466D71C9AEBCF00DD2C30 /* libNrEvent.a */,
+				97B466D71C9AEBCF00DD2C30 /* libnrevent.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,7 +88,7 @@
 			);
 			name = NrEvent;
 			productName = NrEvent;
-			productReference = 97B466D71C9AEBCF00DD2C30 /* libNrEvent.a */;
+			productReference = 97B466D71C9AEBCF00DD2C30 /* libnrevent.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -110,6 +110,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 97B466CE1C9AEBCF00DD2C30;
@@ -227,7 +228,8 @@
 					"\"$(SRCROOT)/../libNrDebug\"",
 					"\"$(SRCROOT)/../libNrIO\"",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_MODULE_NAME = nrevent;
+				PRODUCT_NAME = nrevent;
 			};
 			name = Debug;
 		};
@@ -242,7 +244,8 @@
 					"\"$(SRCROOT)/../libNrDebug\"",
 					"\"$(SRCROOT)/../libNrIO\"",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_MODULE_NAME = nrevent;
+				PRODUCT_NAME = nrevent;
 			};
 			name = Release;
 		};

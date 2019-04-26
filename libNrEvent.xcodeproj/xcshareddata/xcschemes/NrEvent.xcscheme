@@ -11,12 +11,11 @@
             buildForRunning = "YES"
             buildForProfiling = "YES"
             buildForArchiving = "YES"
-            buildForAnalyzing = "YES"
-            hideIssues = "NO">
+            buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "97B466D61C9AEBCF00DD2C30"
-               BuildableName = "libNrEvent.a"
+               BuildableName = "libnrevent.a"
                BlueprintName = "NrEvent"
                ReferencedContainer = "container:libNrEvent.xcodeproj">
             </BuildableReference>
@@ -52,6 +51,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "97B466D61C9AEBCF00DD2C30"
+            BuildableName = "libnrevent.a"
+            BlueprintName = "NrEvent"
+            ReferencedContainer = "container:libNrEvent.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

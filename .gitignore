@@ -5,3 +5,4 @@ config.status
 configure
 *.o
 build/libnrevent.a
+autom4te.cache

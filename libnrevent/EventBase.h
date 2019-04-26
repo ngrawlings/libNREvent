@@ -30,6 +30,8 @@ namespace nrcore {
         
         event_base* getEventBase();
         
+        Thread* getThread();
+        
     protected:
         virtual void run();
         
@@ -37,6 +39,8 @@ namespace nrcore {
         struct event_base *ev_base;
         struct event *event_signal;
         struct event *ev_schedule;
+        
+        Thread* thread;
         
         bool _run;
     };

@@ -18,10 +18,15 @@ namespace nrcore {
         event_signal = 0;
         evthread_use_pthreads();
         ev_base = event_base_new();
+        thread = 0;
     }
     
     EventBase::~EventBase() {
         event_base_free(ev_base);
+    }
+    
+    Thread* EventBase::getThread() {
+        return thread;
     }
     
     void EventBase::run() {
@@ -35,10 +40,11 @@ namespace nrcore {
     void EventBase::runEventLoop(bool create_task) {
         _run = true;
         
-        if (!create_task)
+        if (!create_task) {
+            thread = 0;
             run();
-        else
-            Thread::runTask(this);
+        } else
+            thread = Thread::runTask(this);
     }
     
     void EventBase::breakEventLoop() {
